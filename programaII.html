@@ -8,7 +8,6 @@
 </head>
 <body>
     <script>
-
         function pulaLinha(){
             document.write ("<br><br>")
         }
@@ -18,12 +17,15 @@
             pulaLinha()
         }
 
-        let pesoJuan = 70
-        let alturaJuan = 1.68
+function calcularIMC(peso, altura){
+return imc = peso/(altura*altura)
 
-        let imcJuan = pesoJuan/(alturaJuan*alturaJuan)
-        
-        mostra(` O IMC de Juan é ${imcJuan}`) //templete
+
+}
+
+let IMCJuan = calcularIMC(70, 1.68)
+
+mostra(" O IMC de Juan é: " + IMCJuan)
 
         </script>
 </body>
