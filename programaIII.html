@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Pontuação de time</title>
 </head>
+
 <body>
     <script>
-        function pulaLinha(){
-            document.write ("<br><br>")
+        function pulaLinha() {
+            document.write("<br><br>")
         }
 
-        function mostra(texto){
+        function mostra(texto) {
             document.write(texto)
             pulaLinha()
         }
 
-        mostra( ' Número de pontos do meu time no Brasileirão ')
+        mostra(' Número de pontos do meu time no Brasileirão ')
 
 
         let nomeTime = prompt(' Qual o nome do seu time?')
@@ -29,18 +31,16 @@
 
         mostra(`O ${nometime} obteve um total de ${pontucao} pontos `)
 
-        if(pontuacao > 80){
-mostra(' Parabéns, seu time passou para a série A do Brasileirão')
-        } else if(pontuacao <20){
+        if (pontuacao > 80) {
+            mostra(' Parabéns, seu time passou para a série A do Brasileirão')
+        } else if (pontuacao < 20) {
             mostra(' Infelizmente seu time foi rebaixado')
-        } else{
+        } else {
             mostra(' Seu time continua na Série B')
         }
 
-        
-        <script/>
 
-
+        </script>
 
 </body>
 </html>
