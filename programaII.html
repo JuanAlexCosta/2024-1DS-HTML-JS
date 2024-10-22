@@ -23,9 +23,25 @@ return imc = peso/(altura*altura)
 
 }
 
-let IMCJuan = calcularIMC(70, 1.68)
+let nome = prompt('Qual seu nome?')
+let alturaInformado = prompt(`${nome}, qual sua altura? (Utilize ponto no lugar da vírgula.)`)
+let pesoInformado = prompt(`${nome}, qual seu peso? `)
 
-mostra(" O IMC de Juan é: " + IMCJuan)
+let imcCalculado = calcularIMC(pesoInformado, alturaInformado)
+
+mostra(` ${nome}, seu imc é de ${imcCalculado} `)
+
+if(imcCalculado > 25){
+    mostra(`${nome}, o seu IMC está acima do ideal. `)
+} else if(imcCalculado < 18){
+    mostra(`${nome}, o seu IMC está abaixo do ideal `)
+}else{
+    mostra (`${nome}, o seu IMC está ideal`)
+}
+
+
+
+
 
         </script>
 </body>
