@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Oswald:wght@200..700&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-titulo:"Oswald", sans-serif;
+    --fonte-texto:"Bona Nova SC", serif;
+    --cor1: #0d1b2aff;
+    --cor2: #1b263bff;
+    --cor3: #415a77ff;
+    --cor4: #778da9ff;
+    --cor5: #e0e1ddff; 
+    --cor6: #000000;   
+}
+body{
+    background-color: var(--cor4);
+    font-family: var(--fonte-texto);
+}
+header, footer{
+    background-color: var(--cor3);
+    padding: 2em;
+    color: var(--cor6);
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor5)
+}
